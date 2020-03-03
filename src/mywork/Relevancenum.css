@@ -1,0 +1,24 @@
+.Relevancenum{
+    display: flex;
+    height: 58px;
+}
+.num_content {
+    width: 25%;
+    margin-left: 20px;
+    border-right: 1px solid #ccc;
+}
+.num_content h2{
+    line-height: 10px;
+    font-weight: 500;
+}
+.num_content a{
+    text-decoration:none;
+    color:#2799FF;
+}
+.num_content p{
+    margin-top: 3px;
+    color: #666;
+}
+.num_content3{
+    border-right: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+  #menu #list {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+    background: #d5d5d5;
+}
+
+#menu:hover #list {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+}
+
+    </style>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <a>hover me</a>
+        <ul id="list">
+            <!-- Create a bunch, or not a bunch, of li's to see the timing. -->
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+    </div>
+    
+        
+        <script type="text/javascript">
+        
+        
+        </script>
+
+</body>
+
+
+</html>

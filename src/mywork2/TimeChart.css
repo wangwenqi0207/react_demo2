@@ -1,0 +1,59 @@
+  .time_chart{
+    width: 640px;
+    height: 414px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-320px;
+    margin-top:-207px;
+    background: #fff;
+    border: 1px solid rgba(242, 242, 242, 1);
+    border-radius: 5px;
+    z-index: 999;
+  }
+  .time_chart_title{
+    height: 47px;
+    border-bottom: 1px solid rgba(242, 242, 242, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .time_chart_title h4{
+    line-height: 7px;
+  }
+  .time_chart_title p{
+    margin-right: 20px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+  .time_chart_change{
+    width: 95%;
+    margin:0 auto;
+    margin-top: 15px;
+  }
+  .ant-calendar-picker{
+    width: 119px !important;
+    height: 28px  !important;
+  }
+  .ant-calendar-picker .ant-time-picker-input{
+    margin-left: 3px !important;
+  }
+  .time_chart_change .connect{
+    margin-left: 3px;
+    margin-right:3px;
+  }
+  .time_chart_change .ant-btn{
+    height: 21px !important;
+    margin-left: 8px !important;
+  }
+  .time_chart_change :nth-child(2){
+    margin-left: 3px !important;
+  }
+  .time_chart_container{
+    width: 93%;
+    height: 246px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    border-radius: 5px;
+    margin:0 auto;
+    margin-top: 10px;
+  }

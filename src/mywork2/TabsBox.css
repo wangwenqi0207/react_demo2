@@ -1,0 +1,36 @@
+.app_norm_tabs{
+    margin-left: 20px;
+  }
+  .app_norm_tabs .ant-tabs-nav .ant-tabs-tab-active {
+      color: #fff !important;
+      font-size: 14px !important;
+      background-color: rgba(0, 153, 255, 1)!important;
+      border-radius: 2px !important;
+  }
+  .app_norm_tabs .ant-tabs-nav .ant-tabs-tab{
+    border: 1px solid rgb(217, 217, 217) !important;
+    border-right:none !important;
+    width: 80px !important;
+    height: 32px !important;
+  }
+  .app_norm_tabs .ant-tabs-nav .ant-tabs-tab{
+    margin: 0 0 0 0  !important;
+  }
+  .app_norm_tabs .ant-tabs-bar{
+    border-bottom:none !important;
+  }
+  .app_norm_tabs .ant-tabs-ink-bar{
+    display: none !important;
+  }
+  .app_norm_tabs .ant-tabs-nav-scroll{
+      padding-bottom: 10px !important;
+  }
+  .app_norm_tabs .ant-tabs-nav .ant-tabs-tab{
+    padding:0 !important;
+    text-align: center !important;
+    padding-top: 5px !important;
+  }
+  .app_norm_tabs .ant-tabs-nav{
+    border-right: 1px solid rgb(217, 217, 217) !important;
+  }
+  

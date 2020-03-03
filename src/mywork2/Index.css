@@ -1,0 +1,24 @@
+.norm_box{
+    width: 100%;  
+    background-color: #fafafa;
+    padding-top: 30px;
+}
+.app_norm{
+   width: 90%;
+    height: 733px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #ccc;
+    margin:0 auto;
+    border-radius: 10px;
+    transition: all 0.5;
+    overflow: hidden;
+}
+.app_norm h4{
+    font-weight: 500;
+    font-size: 14px;
+    height: 27px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:rgba(51, 51, 51, 0.847);
+  }
