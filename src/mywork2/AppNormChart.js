@@ -3,12 +3,26 @@ import React, { Component } from 'react'
 import './AppNormChart.css'
 import G2 from '@antv/g2';
 import TimeChart from './TimeChart'
+import { Drawer, Button } from 'antd';
 import Popup1 from './Popup1'
 // import Popup2 from './Popup2'
-import Popup3 from './Popup3'
-
+// import Popup3 from './Popup3'
+import DALPopup from './DALPopup'
 
 export default class AppNormChart extends Component {
+  //弹窗
+
+  showDrawer = () => {
+    this.setState({
+      visible: true,
+    });
+  };
+
+  onClose = () => {
+    this.setState({
+      visible: false,
+    });
+  };
   constructor(props){
     super(props)
     this.state={
@@ -19,10 +33,12 @@ export default class AppNormChart extends Component {
        propsChart:this.props.charts[0],
        display:{display:'none'},
        keys:"0",
-       maskSelected:false
+       maskSelected:false,
+       visible: false,
     }
     this.chart1=this.chart1.bind(this);
     this.pfn = this.pfn.bind(this)
+    this.toParentClose = this.toParentClose.bind(this)
   }
 
   chart1(){
@@ -191,7 +207,19 @@ export default class AppNormChart extends Component {
                   chartTitle.map((item,keys) =>{
                     return <div className="app_norm_chart_view" key={keys}>
                           <div className='app_norm_chart_title'>
-                            <h4>{item}</h4>
+                            <h4>{item}
+                            <Button type="primary" onClick={this.showDrawer} size='small'>
+                              分布
+                            </Button>
+                            <Drawer
+                              placement="right"
+                              closable={false}
+                              onClose={this.onClose}
+                              visible={this.state.visible}
+                            >
+                             <DALPopup toParentClose={this.toParentClose}></DALPopup>
+                            </Drawer>
+                            </h4>
                             <p onClick={this.PopupChart.bind(this,keys)}>icon</p>
                           </div>
                           <div id={this.state.container+this.state.key+keys}></div>
@@ -200,8 +228,8 @@ export default class AppNormChart extends Component {
                 }
                 <div className={this.state.maskSelected ? "mask" : ""}></div>
                 {/* <Popup1></Popup1> */}
-                {/* <Popup2></Popup2> */}
-
+                {/* <Popup3></Popup3> */}
+                {/* <DALPopup></DALPopup> */}
               </div>
         )
     }
@@ -242,7 +270,7 @@ export default class AppNormChart extends Component {
         }
     }
 
-    //子传父点击关闭
+    //弹窗子传父点击关闭
     pfn(text){
         // console.log(text)
         if(text==false){
@@ -252,4 +280,13 @@ export default class AppNormChart extends Component {
           })
         }
     }
+    //抽屉子传父点击关闭2
+    toParentClose(text){
+      // console.log(text)
+      if(text==false){
+        this.setState({
+          visible: false,
+        });
+      }
+  }
 }

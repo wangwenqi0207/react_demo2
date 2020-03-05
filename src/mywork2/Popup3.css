@@ -1,24 +1,37 @@
-.details_popup_second{
+.distribution_popup{
     width: 700px;
-    height: 736px;
+    height: 900px;
     background: #fff;
     position: absolute;
     right:0;
     top: -110px;
     box-shadow: 0px 0px 20px #ccc;
 }
-.details_second_tit1{
+.distribution_popup .details_second_tit1{
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
 }
-.details_second_tit1 h4{
+.distribution_popup .details_second_tit1 h4{
     margin-left: 20px;
+
 }
-.details_second_tit1 p{
+.distribution_popup .details_second_tit1 p{
     margin-right: 20px;
     margin-top: 15px;
     cursor: pointer;
+}
+.distribution_popup_cahrts{
+    width: 95%;
+    margin:0 auto;
+    margin-top: 20px;
+    border: 1px solid rgb(242, 242, 242);
+  }
+.distribution_popup_cahrts_top{
+    display: flex;
+}
+.chartView{
+    width: 50%;
 }

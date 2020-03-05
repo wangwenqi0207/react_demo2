@@ -1,6 +1,22 @@
+.DAL_popup .DAL_popup_tit1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+.DAL_popup .DAL_popup_tit1 h4{
+    margin-left: 20px;
+
+}
+.DAL_popup .DAL_popup_tit1 p{
+    margin-right: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
 .app_norm_tabs{
     margin-left: 20px;
-    margin-top: 20px;
   }
   .app_norm_tabs .ant-tabs-nav .ant-tabs-tab-active {
       color: #fff !important;
@@ -34,4 +50,12 @@
   .app_norm_tabs .ant-tabs-nav{
     border-right: 1px solid rgb(217, 217, 217) !important;
   }
-  
+
+.app_norm_tabs .ant-table-tbody > tr > td {
+    padding: 3px 14px !important;
+}
+.app_norm_tabs .details_popup_tit2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}

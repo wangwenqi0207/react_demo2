@@ -45,6 +45,10 @@
     top:0;
     left:0;
   }
+  /*抽屉*/
+  .ant-drawer-content-wrapper{
+    width: 700px !important;
+  }
   
   
   
