@@ -3,6 +3,9 @@ import React, { Component } from 'react'
 import './AppNormChart.css'
 import G2 from '@antv/g2';
 import TimeChart from './TimeChart'
+import Popup1 from './Popup1'
+// import Popup2 from './Popup2'
+import Popup3 from './Popup3'
 
 
 export default class AppNormChart extends Component {
@@ -14,7 +17,9 @@ export default class AppNormChart extends Component {
        data:this.props.charts,
        chartTitle:["Σ","ɹʣ%","ʱms","ʧΣ"],
        propsChart:this.props.charts[0],
-       display:{display:'none'}
+       display:{display:'none'},
+       keys:"0",
+       maskSelected:false
     }
     this.chart1=this.chart1.bind(this);
     this.pfn = this.pfn.bind(this)
@@ -111,9 +116,18 @@ export default class AppNormChart extends Component {
             type: 'timeCat'
           });
           chart.tooltip({
-            crosshairs: 'y',
-            share: true
-          });
+            showTitle: false,
+            itemTpl: '<div class="g2-tooltip-list-item" style="background-color:#fff;width:205px;height:60px;">'
+                    + '<p style="color:rgba(0,0,0,0.447)">19:03</p>'
+                    + '<div style="dispaly:flex">'
+                    + '<a style="display:-webkit-inline-box;width:6px;height:6px;border-radius:50%;background-color:rgb(0,153,255);margin-right:5px;"></a>'
+                    + `<span style="color:rgba(51,51,51,0.647);font-size:14px;margin-right:60px;">总量</span>`
+                    + `<span style="color:rgba(51,51,51);font-size:14px;margin-right:8px;">121</span>`
+                    + `<span style="color:rgba(0,153,255);font-size:14px;margin-right:8px;">分布</span>`
+                    + `<span style="color:rgba(0,153,255);font-size:14px;margin-right:8px;">详情</span>`
+                    + '</div>'
+                    + '</div>',
+        });
           chart.legend({
             attachLast: true
           });
@@ -165,12 +179,13 @@ export default class AppNormChart extends Component {
     render() {
       let chartTitle = this.state.chartTitle;
       // console.log(chartTitle)
+      // console.log("this.state.data",this.state.data)
         return (
               <div className="app_norm_chart">
                  <TimeChart propsChart={this.state.propsChart}
                             display={this.state.display}
                             pfn={this.pfn}
-                            container={this.state.container}
+                            keys={this.state.keys}
                  ></TimeChart>
                   {
                   chartTitle.map((item,keys) =>{
@@ -183,30 +198,46 @@ export default class AppNormChart extends Component {
                   </div>
                   })
                 }
+                <div className={this.state.maskSelected ? "mask" : ""}></div>
+                {/* <Popup1></Popup1> */}
+                {/* <Popup2></Popup2> */}
+
               </div>
         )
     }
 
     PopupChart(keys){
+      // console.log("keys",keys)
       this.setState({
-        display:{dispaly:"block"}
+        keys:keys
       })
-      console.log(keys)
-        if(keys==1){
+        if(keys==0){
           this.setState({
-            propsChart:this.props.charts[0]
+            propsChart:this.state.data[0],
+            display:{dispaly:"block"},
+            maskSelected:true,
+            keys:"0",
+          })
+        }else if(keys==1){
+          this.setState({
+            propsChart:this.state.data[1],
+            display:{dispaly:"block"},
+            maskSelected:true,
+            keys:"1",
           })
         }else if(keys==2){
           this.setState({
-            propsChart:this.props.charts[1]
+            propsChart:this.props.charts[2],
+            display:{dispaly:"block"},
+            maskSelected:true,
+            keys:"2",
           })
         }else if(keys==3){
           this.setState({
-            propsChart:this.props.charts[2]
-          })
-        }else if(keys==4){
-          this.setState({
-            propsChart:this.props.charts[3]
+            propsChart:this.props.charts[3],
+            display:{dispaly:"block"},
+            maskSelected:true,
+            keys:"3",
           })
         }
     }
@@ -216,7 +247,8 @@ export default class AppNormChart extends Component {
         // console.log(text)
         if(text==false){
           this.setState({
-            display:{display:'none'}
+            display:{display:'none'},
+            maskSelected:false,
           })
         }
     }

@@ -29,35 +29,35 @@ export default class TabsBox extends Component {
               {title:"ǰ Service ʧ",num:"1240"},
           ],
       chartlist:[
-           [
-            {Data: "2010-01", sales: 564},
-            {Data: "2010-02", sales: 657},
-            {Data: "2010-03", sales: 565},
-            {Data: "2010-04", sales: 787},
-            {Data: "2010-05", sales: 566},
-           ],
-            [
-            {Data: "2010-01", sales: 564},
-            {Data: "2010-02", sales: 465},
-            {Data: "2010-03", sales: 134},
-            {Data: "2010-04", sales: 246},
-            {Data: "2010-05", sales: 765},
-           ],
-            [
-            {Data: "2010-01", sales: 453},
-            {Data: "2010-02", sales: 435},
-            {Data: "2010-03", sales: 223},
-            {Data: "2010-04", sales: 755},
-            {Data: "2010-05", sales: 344},
-           ],
-            [
-            {Data: "2010-01", sales: 743},
-            {Data: "2010-02", sales: 332},
-            {Data: "2010-03", sales: 453},
-            {Data: "2010-04", sales: 643},
-            {Data: "2010-05", sales: 123},
-           ],
-          ]
+        [
+          {Data: "2010-01", sales: 564},
+          {Data: "2010-02", sales: 657},
+          {Data: "2010-03", sales: 565},
+          {Data: "2010-04", sales: 787},
+          {Data: "2010-05", sales: 566},
+         ],
+          [
+          {Data: "2010-01", sales: 123},
+          {Data: "2010-02", sales: 465},
+          {Data: "2010-03", sales: 134},
+          {Data: "2010-04", sales: 246},
+          {Data: "2010-05", sales: 765},
+         ],
+          [
+          {Data: "2010-01", sales: 453},
+          {Data: "2010-02", sales: 435},
+          {Data: "2010-03", sales: 223},
+          {Data: "2010-04", sales: 755},
+          {Data: "2010-05", sales: 344},
+         ],
+          [
+          {Data: "2010-01", sales: 743},
+          {Data: "2010-02", sales: 332},
+          {Data: "2010-03", sales: 453},
+          {Data: "2010-04", sales: 643},
+          {Data: "2010-05", sales: 123},
+         ],
+      ]
     }
   }
     render() {
@@ -92,7 +92,7 @@ export default class TabsBox extends Component {
             {Data: "2010-05", sales: 566},
            ],
             [
-            {Data: "2010-01", sales: 564},
+            {Data: "2010-01", sales: 123},
             {Data: "2010-02", sales: 465},
             {Data: "2010-03", sales: 134},
             {Data: "2010-04", sales: 246},
@@ -118,14 +118,14 @@ export default class TabsBox extends Component {
           this.setState({
               chartlist:[
             [
-            {Data: "2010-01", sales: 453},
+            {Data: "2010-01", sales: 1223},
             {Data: "2010-02", sales: 435},
             {Data: "2010-03", sales: 223},
             {Data: "2010-04", sales: 755},
             {Data: "2010-05", sales: 344},
            ],
            [
-            {Data: "2010-01", sales: 564},
+            {Data: "2010-01", sales: 532},
             {Data: "2010-02", sales: 657},
             {Data: "2010-03", sales: 565},
             {Data: "2010-04", sales: 787},

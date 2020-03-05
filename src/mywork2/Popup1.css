@@ -1,0 +1,8 @@
+.distribution_popup{
+    width: 500px;
+    height: 736px;
+    background: #fff;
+    position: absolute;
+    right:0;
+    top: -110px;
+}

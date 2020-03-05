@@ -1,28 +1,30 @@
 .Tabschange{
     margin-top: 30px;
-    height:303px;
+    height:200px;
     border-top: 1px solid #f0ededc7;
-}
-.Tabschange .ant-tabs-nav {
+    }
+    .Tabschange .ant-tabs-nav {
     font-size: 14px !important;
     width: 300px !important;
-}
-.Tabschange  .ant-tabs-nav-wrap{
-    height: 221px !important;
-}
-.Tabschange .ant-tabs .ant-tabs-left-bar .ant-tabs-tab {
+    color: rgba(0, 0, 0, 0.447);
+    }
+    .Tabschange .ant-tabs-nav-wrap{
+    height: 140px !important;
+    }
+    .Tabschange .ant-tabs .ant-tabs-left-bar .ant-tabs-tab {
     text-align: left !important;
     padding:15px 10px !important;
-}
-.Tabschange .ant-tabs-nav .ant-tabs-tab-active {
-    color: #2799FF !important;
+    }
+    .Tabschange .ant-tabs-nav .ant-tabs-tab-active {
+    color: #0099FF !important;
     font-size: 14px !important;
-    background-color: rgb(105,183,255,0.3);
-}
-.Tabschange .ant-tabs .ant-tabs-left-bar .ant-tabs-ink-bar, .ant-tabs .ant-tabs-right-bar .ant-tabs-ink-bar{
+    background-color: rgba(0, 153, 255, 0.2);
+    }
+    .Tabschange .ant-tabs .ant-tabs-left-bar .ant-tabs-ink-bar, .ant-tabs .ant-tabs-right-bar .ant-tabs-ink-bar{
     width: 0 !important;
     height: 0 !important;
-}
-.ant-tabs .ant-tabs-left-bar .ant-tabs-tab, .ant-tabs .ant-tabs-right-bar .ant-tabs-tab{
+    }
+    .ant-tabs .ant-tabs-left-bar .ant-tabs-tab, .ant-tabs .ant-tabs-right-bar .ant-tabs-tab{
     margin: 0 0 0 0 !important;
-}
+    }
+    

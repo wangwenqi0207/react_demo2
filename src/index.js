@@ -28,7 +28,7 @@ import zhCN from 'antd/es/locale/zh_CN';
 import {ConfigProvider } from 'antd'
 
 //mywork-----------------------------------------------------------
-import Demo1 from './mywork/Demo1'
+//  import Demo1 from './mywork/Demo1'
 
 //mywork2------------------------------------------------------------
 import AppNorm from './mywork2/Index'
