@@ -276,6 +276,6 @@ export default class DALPopup extends Component {
         )
     }
     toParentClose(text){
-      this.props.toParentClose(text)
+      this.props.toParentClose(false)
     }
 }

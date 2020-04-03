@@ -216,7 +216,7 @@ const columns = [
   ];
 
 
-export default class DALPopup extends Component {
+export default class CALPopup extends Component {
    constructor(props){
     super(props)
     this.state={

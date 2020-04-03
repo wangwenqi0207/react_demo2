@@ -211,6 +211,7 @@ export default class AppNormChart extends Component {
                             <Button type="primary" onClick={this.showDrawer} size='small'>
                               分布
                             </Button>
+                            
                             <Drawer
                               placement="right"
                               closable={false}
@@ -282,7 +283,7 @@ export default class AppNormChart extends Component {
     }
     //抽屉子传父点击关闭2
     toParentClose(text){
-      // console.log(text)
+      console.log(text)
       if(text==false){
         this.setState({
           visible: false,

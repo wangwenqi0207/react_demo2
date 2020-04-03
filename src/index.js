@@ -33,14 +33,18 @@ import {ConfigProvider } from 'antd'
 //mywork2------------------------------------------------------------
 import AppNorm from './mywork2/Index'
 
+//antv--------------------------------------------
+//import Demo1 from './components/Antv/Demo1'
+
+
 // ReactDOM.render(
 //     <ConfigProvider  locale={zhCN}>
 //        <Provider store={store}>
 //             <Router>
-//                 <Route component={App}></Route>   
+//                 <Route component={pp}></Route>   
 //             </Router>
 //        </Provider>
-//        </ConfigProvider>
+//        </ConfigProvider>A
 // ,document.getElementById('root'));
 
 ReactDOM.render(
